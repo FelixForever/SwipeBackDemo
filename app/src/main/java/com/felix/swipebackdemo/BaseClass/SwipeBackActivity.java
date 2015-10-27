@@ -20,9 +20,15 @@ public class SwipeBackActivity extends Activity implements SwipeBackLayout.Swipe
     @Override
     public void setContentView(int layoutResID) {
         super.setContentView(getContainer());
+
         View view = LayoutInflater.from(this).inflate(layoutResID, null);
         swipeBackLayout.addView(view);
         setDragEdge(SwipeBackLayout.DragEdge.LEFT);
+    }
+    @Override
+    public void setTheme(int resid)
+    {
+        super.setTheme(R.style.Theme_Swipe_Back);
     }
 
     private View getContainer() {

@@ -19,7 +19,8 @@
             </intent-filter>
         </activity>
         <activity android:name=".MainActivity_second"
-                  android:theme="@style/Theme.Swipe.Back"/>
+                  android:theme="@style/Theme.AppCompat"
+            />
     </application>
 
 </manifest>
